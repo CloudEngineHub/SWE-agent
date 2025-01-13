@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -3159,7 +3159,7 @@ etc.</p>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">109</span>
 <span class="normal">110</span>
 <span class="normal">111</span>
-<span class="normal">112</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_api_keys</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="normal">112</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_api_keys</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_key</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="p">[]</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_key</span><span class="o">.</span><span class="n">get_secret_value</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:::&quot;</span><span class="p">)</span>
@@ -3217,7 +3217,7 @@ This can also be very useful to create your first <a href="../../config/demonstr
 <span class="normal">230</span>
 <span class="normal">231</span>
 <span class="normal">232</span>
-<span class="normal">233</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">HumanModelConfig</span><span class="p">,</span> <span class="n">tools</span><span class="p">:</span> <span class="n">ToolConfig</span><span class="p">):</span>
+<span class="normal">233</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">HumanModelConfig</span><span class="p">,</span> <span class="n">tools</span><span class="p">:</span> <span class="n">ToolConfig</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Model that allows for human-in-the-loop&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s2">&quot;swea-lm&quot;</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="s2">&quot;🤖&quot;</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">config</span>
@@ -3297,7 +3297,7 @@ This can also be very useful to create your first <a href="../../config/demonstr
   </span>
 
 </h4>
-<div class="doc-signature highlight"><pre><span></span><code><span class="n">multi_line_command_endings</span> <span class="o">=</span> <span class="p">{</span><span class="n"><span title="command.name">name</span></span><span class="p">:</span> <span class="n">_f2QxTKWfor</span> <span class="n">command</span> <span class="ow">in</span> <span class="n"><span title="sweagent.tools.commands">commands</span></span> <span class="k">if</span> <span class="n"><span title="command.end_name">end_name</span></span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">}</span>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">multi_line_command_endings</span> <span class="o">=</span> <span class="p">{</span><span class="n"><span title="command.name">name</span></span><span class="p">:</span> <span class="n">_4YQh3pMfor</span> <span class="n">command</span> <span class="ow">in</span> <span class="n"><span title="sweagent.tools.commands">commands</span></span> <span class="k">if</span> <span class="n"><span title="command.end_name">end_name</span></span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">}</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -3354,7 +3354,7 @@ This can also be very useful to create your first <a href="../../config/demonstr
 <span class="normal">288</span>
 <span class="normal">289</span>
 <span class="normal">290</span>
-<span class="normal">291</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="n">History</span><span class="p">,</span> <span class="n">action_prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&gt; &quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="normal">291</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="n">History</span><span class="p">,</span> <span class="n">action_prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&gt; &quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Wrapper to separate action prompt from formatting&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_query</span><span class="p">(</span><span class="n">history</span><span class="p">,</span> <span class="n">action_prompt</span><span class="p">)}</span>
@@ -3395,8 +3395,6 @@ This can also be very useful to create your first <a href="../../config/demonstr
               Bases: <code><a class="autorefs autorefs-internal" title="sweagent.agent.models.HumanModel" href="#sweagent.agent.models.HumanModel">HumanModel</a></code></p>
 
 
-        <p>Model that allows for human-in-the-loop</p>
-
 
 
 
@@ -3415,7 +3413,7 @@ This can also be very useful to create your first <a href="../../config/demonstr
 <span class="normal">230</span>
 <span class="normal">231</span>
 <span class="normal">232</span>
-<span class="normal">233</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">HumanModelConfig</span><span class="p">,</span> <span class="n">tools</span><span class="p">:</span> <span class="n">ToolConfig</span><span class="p">):</span>
+<span class="normal">233</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">HumanModelConfig</span><span class="p">,</span> <span class="n">tools</span><span class="p">:</span> <span class="n">ToolConfig</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Model that allows for human-in-the-loop&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s2">&quot;swea-lm&quot;</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="s2">&quot;🤖&quot;</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">config</span>
@@ -3473,7 +3471,7 @@ This can also be very useful to create your first <a href="../../config/demonstr
 <span class="normal">306</span>
 <span class="normal">307</span>
 <span class="normal">308</span>
-<span class="normal">309</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="n">History</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="normal">309</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="n">History</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Logic for handling user input (both thought + action) to pass to SWEEnv&quot;&quot;&quot;</span>
     <span class="n">thought_all</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
     <span class="n">thought</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Thought (end w/ END_THOUGHT): &quot;</span><span class="p">)</span>
@@ -3548,7 +3546,7 @@ and re-issuing them.</p>
 <span class="normal">328</span>
 <span class="normal">329</span>
 <span class="normal">330</span>
-<span class="normal">331</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">ReplayModelConfig</span><span class="p">,</span> <span class="n">tools</span><span class="p">:</span> <span class="n">ToolConfig</span><span class="p">):</span>
+<span class="normal">331</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">ReplayModelConfig</span><span class="p">,</span> <span class="n">tools</span><span class="p">:</span> <span class="n">ToolConfig</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Model used for replaying a trajectory (i.e., taking all the actions for the `.traj` file</span>
 <span class="sd">    and re-issuing them.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -3740,7 +3738,7 @@ and re-issuing them.</p>
 <span class="normal">371</span>
 <span class="normal">372</span>
 <span class="normal">373</span>
-<span class="normal">374</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="n">History</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="normal">374</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="n">History</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Logic for tracking which replay action to pass to SWEEnv&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">api_calls</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="n">actions</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_replays</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_replay_idx</span><span class="p">]</span>
@@ -3885,7 +3883,7 @@ and re-issuing them.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "content.code.annotate", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

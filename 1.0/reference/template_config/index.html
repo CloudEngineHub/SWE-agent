@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -2558,7 +2558,7 @@ Available variables: <code>bash_stdout</code>, <code>bash_stderr</code></p>
 <span class="normal">93</span>
 <span class="normal">94</span>
 <span class="normal">95</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;after&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">validate_template_jinja_syntax</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">validate_template_jinja_syntax</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
     <span class="n">template_fields</span> <span class="o">=</span> <span class="p">[</span><span class="n">field</span> <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">model_fields</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="n">field</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;_template&quot;</span><span class="p">)]</span>
     <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="n">template_fields</span><span class="p">:</span>
         <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">field</span><span class="p">)</span>
@@ -2595,7 +2595,7 @@ Available variables: <code>bash_stdout</code>, <code>bash_stderr</code></p>
 <span class="normal">100</span>
 <span class="normal">101</span>
 <span class="normal">102</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;after&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">warn_models_in_history</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">warn_models_in_history</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">put_demos_in_history</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">demonstration_template</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">logger</span> <span class="o">=</span> <span class="n">get_logger</span><span class="p">(</span><span class="s2">&quot;swea-config&quot;</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="s2">&quot;🔧&quot;</span><span class="p">)</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;demonstration_template is ignored when put_demos_in_history is True&quot;</span><span class="p">)</span>
@@ -2708,7 +2708,7 @@ Available variables: <code>bash_stdout</code>, <code>bash_stderr</code></p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "content.code.annotate", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

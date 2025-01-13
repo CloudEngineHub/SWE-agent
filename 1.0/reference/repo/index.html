@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -2534,7 +2534,7 @@ SWE-agent will then start from this commit when trying to solve the problem.</p>
               <summary>Source code in <code>sweagent/environment/repo.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">49</span>
 <span class="normal">50</span>
-<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deployment</span><span class="p">:</span> <span class="n">AbstractDeployment</span><span class="p">):</span>
+<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deployment</span><span class="p">:</span> <span class="n">AbstractDeployment</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Does nothing.&quot;&quot;&quot;</span>
     <span class="k">pass</span>
 </code></pre></div></td></tr></table></div>
@@ -2724,12 +2724,12 @@ SWE-agent will then start from this commit when trying to solve the problem.</p>
 <span class="normal">81</span>
 <span class="normal">82</span>
 <span class="normal">83</span>
-<span class="normal">84</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">check_valid_repo</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
+<span class="normal">84</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">check_valid_repo</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">repo</span> <span class="o">=</span> <span class="n">GitRepo</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="n">search_parent_directories</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="k">except</span> <span class="n">InvalidGitRepositoryError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
         <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Could not find git repository at </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="si">=}</span><span class="s2">.&quot;</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
     <span class="k">if</span> <span class="n">repo</span><span class="o">.</span><span class="n">is_dirty</span><span class="p">()</span> <span class="ow">and</span> <span class="s2">&quot;PYTEST_CURRENT_TEST&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
         <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Local git repository </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="si">}</span><span class="s2"> is dirty. Please commit or stash changes.&quot;</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -2763,7 +2763,7 @@ SWE-agent will then start from this commit when trying to solve the problem.</p>
 <span class="normal">91</span>
 <span class="normal">92</span>
 <span class="normal">93</span>
-<span class="normal">94</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deployment</span><span class="p">:</span> <span class="n">AbstractDeployment</span><span class="p">):</span>
+<span class="normal">94</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deployment</span><span class="p">:</span> <span class="n">AbstractDeployment</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">check_valid_repo</span><span class="p">()</span>
     <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
         <span class="n">deployment</span><span class="o">.</span><span class="n">runtime</span><span class="o">.</span><span class="n">upload</span><span class="p">(</span><span class="n">UploadRequest</span><span class="p">(</span><span class="n">source_path</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">),</span> <span class="n">target_path</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">repo_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
@@ -3001,7 +3001,7 @@ SWE-agent will then start from this commit when trying to solve the problem.</p>
 <span class="normal">155</span>
 <span class="normal">156</span>
 <span class="normal">157</span>
-<span class="normal">158</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deployment</span><span class="p">:</span> <span class="n">AbstractDeployment</span><span class="p">):</span>
+<span class="normal">158</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deployment</span><span class="p">:</span> <span class="n">AbstractDeployment</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Clones the repository to the sandbox.&quot;&quot;&quot;</span>
     <span class="n">base_commit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_commit</span>
     <span class="n">github_token</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;GITHUB_TOKEN&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
@@ -3127,7 +3127,7 @@ SWE-agent will then start from this commit when trying to solve the problem.</p>
 <span class="normal">183</span>
 <span class="normal">184</span>
 <span class="normal">185</span>
-<span class="normal">186</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">repo_from_simplified_input</span><span class="p">(</span>
+<span class="normal">186</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">repo_from_simplified_input</span><span class="p">(</span>
     <span class="o">*</span><span class="p">,</span> <span class="nb">input</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">base_commit</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;HEAD&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;local&quot;</span><span class="p">,</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span> <span class="s2">&quot;preexisting&quot;</span><span class="p">,</span> <span class="s2">&quot;auto&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;auto&quot;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RepoConfig</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Get repo config from a simplified input.</span>
@@ -3250,7 +3250,7 @@ SWE-agent will then start from this commit when trying to solve the problem.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "content.code.annotate", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

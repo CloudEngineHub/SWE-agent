@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -2638,7 +2638,7 @@ see the <a href="../agent_config/">agent configuration reference page</a>.</p>
 <span class="normal">184</span>
 <span class="normal">185</span>
 <span class="normal">186</span>
-<span class="normal">187</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+<span class="normal">187</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="o">*</span><span class="p">,</span>
     <span class="n">templates</span><span class="p">:</span> <span class="n">TemplateConfig</span><span class="p">,</span>
@@ -3011,7 +3011,7 @@ the environment and is also what is being used when replaying the trajectory</p>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">329</span>
 <span class="normal">330</span>
 <span class="normal">331</span>
-<span class="normal">332</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_demonstrations_to_history</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">332</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_demonstrations_to_history</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Add demonstrations to history&quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">demonstration_path</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">templates</span><span class="o">.</span><span class="n">demonstrations</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_add_demonstration_to_history</span><span class="p">(</span><span class="n">demonstration_path</span><span class="p">)</span>
@@ -3041,7 +3041,7 @@ the environment and is also what is being used when replaying the trajectory</p>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">200</span>
 <span class="normal">201</span>
 <span class="normal">202</span>
-<span class="normal">203</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_hook</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hook</span><span class="p">:</span> <span class="n">AbstractAgentHook</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">203</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_hook</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hook</span><span class="p">:</span> <span class="n">AbstractAgentHook</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Add hook to agent&quot;&quot;&quot;</span>
     <span class="n">hook</span><span class="o">.</span><span class="n">on_init</span><span class="p">(</span><span class="n">agent</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_chook</span><span class="o">.</span><span class="n">add_hook</span><span class="p">(</span><span class="n">hook</span><span class="p">)</span>
@@ -3081,7 +3081,7 @@ at the start of a new attempt.</p>
 <span class="normal">456</span>
 <span class="normal">457</span>
 <span class="normal">458</span>
-<span class="normal">459</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_instance_template_to_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">459</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_instance_template_to_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Add observation to history, as well as the instance template or demonstrations if we&#39;re</span>
 <span class="sd">    at the start of a new attempt.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -3142,7 +3142,7 @@ at the start of a new attempt.</p>
 <span class="normal">442</span>
 <span class="normal">443</span>
 <span class="normal">444</span>
-<span class="normal">445</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_step_to_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">445</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_step_to_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Adds a step (command that was run and output) to the model history&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_append_history</span><span class="p">(</span>
         <span class="p">{</span>
@@ -3201,7 +3201,7 @@ at the start of a new attempt.</p>
 <span class="normal">818</span>
 <span class="normal">819</span>
 <span class="normal">820</span>
-<span class="normal">821</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_step_to_trajectory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">821</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_step_to_trajectory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="n">trajectory_step</span> <span class="o">=</span> <span class="n">TrajectoryStep</span><span class="p">(</span>
         <span class="p">{</span>
             <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="n">step</span><span class="o">.</span><span class="n">action</span><span class="p">,</span>
@@ -3244,7 +3244,7 @@ at the start of a new attempt.</p>
 <span class="normal">324</span>
 <span class="normal">325</span>
 <span class="normal">326</span>
-<span class="normal">327</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_system_message_to_history</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">327</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_system_message_to_history</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Add system message to history&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_problem_statement</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
     <span class="n">system_msg</span> <span class="o">=</span> <span class="n">Template</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">templates</span><span class="o">.</span><span class="n">system_template</span><span class="p">)</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">_get_format_dict</span><span class="p">())</span>
@@ -3296,7 +3296,7 @@ This means we send the <code>submit</code> command to the runtime and parse the 
 <span class="normal">544</span>
 <span class="normal">545</span>
 <span class="normal">546</span>
-<span class="normal">547</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">attempt_autosubmission_after_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
+<span class="normal">547</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">attempt_autosubmission_after_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;For most exceptions, we attempt to still extract the patch and submit that.</span>
 <span class="sd">    This means we send the `submit` command to the runtime and parse the output.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -3435,7 +3435,7 @@ with some of the attributes set.</p>
 <span class="normal">679</span>
 <span class="normal">680</span>
 <span class="normal">681</span>
-<span class="normal">682</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
+<span class="normal">682</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Forward the model without handling errors.</span>
 
 <span class="sd">    All exceptions raised will contain the `StepOutput` object</span>
@@ -3678,7 +3678,7 @@ we will not execute it but requery the model for a corrected command.</p>
 <span class="normal">804</span>
 <span class="normal">805</span>
 <span class="normal">806</span>
-<span class="normal">807</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">forward_with_handling</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
+<span class="normal">807</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">forward_with_handling</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">history</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Forward the model and handle errors, requerying the model if we can.</span>
 <span class="sd">    For example, if the model outputs a bash command that has syntax errors,</span>
 <span class="sd">    we will not execute it but requery the model for a corrected command.</span>
@@ -3692,7 +3692,7 @@ we will not execute it but requery the model for a corrected command.</p>
 <span class="sd">        step_output: step output</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">handle_error_with_autosubmission</span><span class="p">(</span><span class="n">exit_status</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">handle_error_with_autosubmission</span><span class="p">(</span><span class="n">exit_status</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Attempts to autosubmit (extract patch from the environment) and stops the loop.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">attempt_autosubmission_after_error</span><span class="p">(</span>
@@ -3704,7 +3704,7 @@ we will not execute it but requery the model for a corrected command.</p>
             <span class="p">)</span>
         <span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">handle_error_with_retry</span><span class="p">(</span><span class="n">exception</span><span class="p">:</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">template</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">handle_error_with_retry</span><span class="p">(</span><span class="n">exception</span><span class="p">:</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">template</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Requeries the model if the error is a format/blocklist/bash syntax error.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Requerying model (</span><span class="si">%s</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">exception</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
         <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">exception</span><span class="p">,</span> <span class="s2">&quot;step&quot;</span><span class="p">,</span> <span class="n">StepOutput</span><span class="p">())</span>
@@ -3837,7 +3837,7 @@ we will not execute it but requery the model for a corrected command.</p>
 <span class="normal">196</span>
 <span class="normal">197</span>
 <span class="normal">198</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
-<span class="k">def</span> <span class="nf">from_config</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">AgentConfig</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">from_config</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">AgentConfig</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">get_model</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">tools</span><span class="p">)</span>
     <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
         <span class="n">templates</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">templates</span><span class="p">,</span>
@@ -3997,7 +3997,7 @@ If the model is able to correct itself, the records of the mistakes will not be 
 <span class="normal">522</span>
 <span class="normal">523</span>
 <span class="normal">524</span>
-<span class="normal">525</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_model_requery_history</span><span class="p">(</span>
+<span class="normal">525</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_model_requery_history</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span> <span class="n">error_template</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">output</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Ask the model to correct after a hitting one of the following errors:</span>
@@ -4177,7 +4177,7 @@ If the model is able to correct itself, the records of the mistakes will not be 
 <span class="normal">638</span>
 <span class="normal">639</span>
 <span class="normal">640</span>
-<span class="normal">641</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">handle_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
+<span class="normal">641</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">handle_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Runs an action proposed by the agent in the environment and returns the corresponding output.</span>
 
 <span class="sd">    Args:</span>
@@ -4325,7 +4325,7 @@ If the model is able to correct itself, the records of the mistakes will not be 
 <span class="normal">568</span>
 <span class="normal">569</span>
 <span class="normal">570</span>
-<span class="normal">571</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">handle_submission</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">observation</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
+<span class="normal">571</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">handle_submission</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">:</span> <span class="n">StepOutput</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">observation</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Check if there was a submission in the observation and handle it.</span>
 
 <span class="sd">    Args:</span>
@@ -4460,7 +4460,7 @@ main loop that repeatedly calls <code>self._step</code> until the problem is sol
 <span class="normal">878</span>
 <span class="normal">879</span>
 <span class="normal">880</span>
-<span class="normal">881</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">run</span><span class="p">(</span>
+<span class="normal">881</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="n">env</span><span class="p">:</span> <span class="n">SWEEnv</span><span class="p">,</span>
     <span class="n">problem_statement</span><span class="p">:</span> <span class="n">ProblemStatement</span> <span class="o">|</span> <span class="n">ProblemStatementConfig</span><span class="p">,</span>
@@ -4542,14 +4542,14 @@ This includes the history, the environment state, and the model stats.</p>
 <span class="normal">488</span>
 <span class="normal">489</span>
 <span class="normal">490</span>
-<span class="normal">491</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">save_trajectory</span><span class="p">(</span>
+<span class="normal">491</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">save_trajectory</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Save the trajectory to disk.</span>
 <span class="sd">    This includes the history, the environment state, and the model stats.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">get_attempt_data</span><span class="p">(</span><span class="n">attempt_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_attempt_data</span><span class="p">(</span><span class="n">attempt_idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get data saved for every attempt&quot;&quot;&quot;</span>
         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_env</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
         <span class="c1"># The deepcopy here is important because else the</span>
@@ -4665,7 +4665,7 @@ formatting the system message and adding demonstrations to the history.</p>
 <span class="normal">305</span>
 <span class="normal">306</span>
 <span class="normal">307</span>
-<span class="normal">308</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">setup</span><span class="p">(</span>
+<span class="normal">308</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="n">env</span><span class="p">:</span> <span class="n">SWEEnv</span><span class="p">,</span>
     <span class="n">problem_statement</span><span class="p">:</span> <span class="n">ProblemStatement</span> <span class="o">|</span> <span class="n">ProblemStatementConfig</span><span class="p">,</span>
@@ -4734,7 +4734,7 @@ formatting the system message and adding demonstrations to the history.</p>
 <span class="normal">315</span>
 <span class="normal">316</span>
 <span class="normal">317</span>
-<span class="normal">318</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">setup_attempt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">318</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">setup_attempt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Setup the agent for a new attempt. This includes resetting the model stats.&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">_env</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_i_attempt</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -4824,7 +4824,7 @@ with additional bookkeeping:</p>
 <span class="normal">849</span>
 <span class="normal">850</span>
 <span class="normal">851</span>
-<span class="normal">852</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
+<span class="normal">852</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">StepOutput</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Run a step of the agent. This is a wrapper around `self.forward_with_handling`</span>
 <span class="sd">    with additional bookkeeping:</span>
 
@@ -4962,7 +4962,7 @@ with additional bookkeeping:</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "content.code.annotate", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

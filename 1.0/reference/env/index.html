@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -2403,7 +2403,7 @@ Equivalent to calling <code>add_hook</code> for each hook after initialization.<
 <span class="normal">64</span>
 <span class="normal">65</span>
 <span class="normal">66</span>
-<span class="normal">67</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+<span class="normal">67</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="o">*</span><span class="p">,</span>
     <span class="n">deployment</span><span class="p">:</span> <span class="n">AbstractDeployment</span><span class="p">,</span>
@@ -2578,7 +2578,7 @@ lifecycle, in particular to connect SWE-agent to a new interface (like a GUI).</
 <span class="normal">86</span>
 <span class="normal">87</span>
 <span class="normal">88</span>
-<span class="normal">89</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_hook</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hook</span><span class="p">:</span> <span class="n">EnvHook</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">89</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add_hook</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hook</span><span class="p">:</span> <span class="n">EnvHook</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Add `EnvHook` to the environment.</span>
 
 <span class="sd">    This allows to inject custom functionality at different stages of the environment</span>
@@ -2613,7 +2613,7 @@ lifecycle, in particular to connect SWE-agent to a new interface (like a GUI).</
 <span class="normal">145</span>
 <span class="normal">146</span>
 <span class="normal">147</span>
-<span class="normal">148</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">148</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Shoutdown SWE-ReX deployment etc.&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Beginning environment shutdown...&quot;</span><span class="p">)</span>
     <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">deployment</span><span class="o">.</span><span class="n">stop</span><span class="p">())</span>
@@ -2806,7 +2806,7 @@ exit code is non-zero, <code>raise</code>: raise error if exit code is non-zero<
 <span class="normal">210</span>
 <span class="normal">211</span>
 <span class="normal">212</span>
-<span class="normal">213</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">communicate</span><span class="p">(</span>
+<span class="normal">213</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">communicate</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="nb">input</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">timeout</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">25</span><span class="p">,</span>
@@ -2894,7 +2894,7 @@ more flexibility.</p>
 <span class="normal">78</span>
 <span class="normal">79</span>
 <span class="normal">80</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
-<span class="k">def</span> <span class="nf">from_config</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">EnvironmentConfig</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">from_config</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">EnvironmentConfig</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Create an environment instance from a configuration object.</span>
 <span class="sd">    This is the recommended way to create an environment instance, unless you need</span>
 <span class="sd">    more flexibility.</span>
@@ -2927,7 +2927,7 @@ more flexibility.</p>
             <details class="quote">
               <summary>Source code in <code>sweagent/environment/swe_env.py</code></summary>
               <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">163</span>
-<span class="normal">164</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">interrupt_session</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="normal">164</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">interrupt_session</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">deployment</span><span class="o">.</span><span class="n">runtime</span><span class="o">.</span><span class="n">run_in_session</span><span class="p">(</span><span class="n">BashInterruptAction</span><span class="p">()))</span>
 </code></pre></div></td></tr></table></div>
             </details>
@@ -3020,7 +3020,7 @@ more flexibility.</p>
 <span class="normal">227</span>
 <span class="normal">228</span>
 <span class="normal">229</span>
-<span class="normal">230</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">PurePath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="normal">230</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">read_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">PurePath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Read file contents from container</span>
 
 <span class="sd">    Args:</span>
@@ -3103,7 +3103,7 @@ environment to a clean state before a new attempt.</p>
 <span class="normal">119</span>
 <span class="normal">120</span>
 <span class="normal">121</span>
-<span class="normal">122</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="normal">122</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Reset the environment to a clean state.</span>
 <span class="sd">    Gets called by `start`, but can also be called independently to reset the</span>
 <span class="sd">    environment to a clean state before a new attempt.</span>
@@ -3143,7 +3143,7 @@ environment to a clean state before a new attempt.</p>
 <span class="normal">233</span>
 <span class="normal">234</span>
 <span class="normal">235</span>
-<span class="normal">236</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">set_env_variables</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">env_variables</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">236</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">set_env_variables</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">env_variables</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Set environment variables in the environment.&quot;&quot;&quot;</span>
     <span class="n">_env_setters</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;export </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">shlex</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">env_variables</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
     <span class="n">command</span> <span class="o">=</span> <span class="s2">&quot; &amp;&amp; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_env_setters</span><span class="p">)</span>
@@ -3176,7 +3176,7 @@ environment to a clean state before a new attempt.</p>
 <span class="normal">93</span>
 <span class="normal">94</span>
 <span class="normal">95</span>
-<span class="normal">96</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">96</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Start the environment and reset it to a clean state.&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_init_deployment</span><span class="p">()</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
@@ -3290,7 +3290,7 @@ environment to a clean state before a new attempt.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "content.code.annotate", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
