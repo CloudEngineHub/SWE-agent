@@ -2241,6 +2241,14 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
 
 
 <h1 id="models-and-api-keys">Models and API keys</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Setting up models</p>
+<p>This page shows how you can set up your LM with SWE-agent</p>
+<ul>
+<li>Generally all API models work out of the box by just adding the key and specifying <code>--agent.model.name</code></li>
+<li>More care must be taken for local models (see tips below!)</li>
+</ul>
+</div>
 <h2 id="setting-api-keys">Setting API keys</h2>
 <p>In order to access the LM of your choice (and to access private GitHub repositories), you need to supply the corresponding keys.</p>
 <p>There are two options to do this:</p>
@@ -2322,6 +2330,9 @@ like with function calling.</p>
 <span class="w">    </span><span class="c1"># instead (see below)</span>
 <span class="w">    </span><span class="nt">parse_function</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;thought_action&quot;</span>
+<span class="w">  </span><span class="c1"># You probably do not need the cache control history processor if you&#39;re not</span>
+<span class="w">  </span><span class="c1"># using Claude, so please remove it if it&#39;s in your config.</span>
+<span class="w">  </span><span class="nt">history_processors</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
 </code></pre></div>
 <ol>
 <li>Make sure that your model includes a "provider", i.e., follows the form <code>provider/model_name</code>. The model name and provider might be arbitrarily chosen.</li>
@@ -2329,6 +2340,8 @@ like with function calling.</p>
 <li>Disable max input tokens check</li>
 </ol>
 <p>in your <a href="../../config/config/">config file</a>.
+Note that you're always ingesting a config file: If you haven't specified it manually with <code>--config</code>, we're loading a default config, which might not
+what you want (in particular, it uses function calling and prompt caching)!
 If you're using a <a href="https://docs.litellm.ai/docs/providers/openai_compatible#usage-with-litellm-proxy-server">litellm proxy</a>, make sure to set your <code>agent.model.name</code> to <code>openai/...</code>
 and set <code>agent.model.api_key</code> to the key you've configured for your proxy (or a random value; it cannot be empty).</p>
 <div class="admonition warning">
