@@ -2294,7 +2294,7 @@ python<span class="w"> </span>run.py<span class="w"> </span><span class="se">\</
 <li><code>--env.deployment.image</code> points to the <a href="https://hub.docker.com/_/python">dockerhub image</a> of the same name</li>
 </ol>
 <p>For the next example, we will use a cloud-based execution environment instead of using local docker containers.
-For this, you first need to set up a modal account, then run:</p>
+For this, you first need to set up a modal account, install the necessary extra dependencies <code>pip install 'swe-rex[modal]'</code>, then run:</p>
 <div class="highlight"><span class="filename">Deployment on modal (cloud-based execution)</span><pre><span></span><code>python<span class="w"> </span>run.py<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>...
 <span class="hll"><span class="w">  </span>--env.deployment.type<span class="o">=</span>modal<span class="w"> </span><span class="se">\</span>
