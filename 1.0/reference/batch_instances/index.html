@@ -62,6 +62,8 @@
     
       <link rel="stylesheet" href="../../assets/image_theme.css">
     
+      <link rel="stylesheet" href="../../assets/bubbles.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2176,9 +2178,9 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
 </li>
         
           <li class="md-nav__item">
-  <a href="#sweagent.run.batch_instances.SWEBenchInstances.path" class="md-nav__link">
+  <a href="#sweagent.run.batch_instances.SWEBenchInstances.path_override" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;path
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;path_override
     </span>
   </a>
   
@@ -3239,9 +3241,9 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
 </li>
         
           <li class="md-nav__item">
-  <a href="#sweagent.run.batch_instances.SWEBenchInstances.path" class="md-nav__link">
+  <a href="#sweagent.run.batch_instances.SWEBenchInstances.path_override" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;path
+      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;path_override
     </span>
   </a>
   
@@ -3510,6 +3512,7 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+
                   
 
 
@@ -4826,12 +4829,12 @@ Possible values are stop or start:stop or start:stop:step.
                 (<code><span title="typing.Literal">Literal</span>[&#39;lite&#39;, &#39;verified&#39;, &#39;full&#39;, &#39;multimodal&#39;, &#39;multilingual&#39;]</code>)
             </li>
             <li>
-              <code><a class="autorefs autorefs-internal" title="            path
+              <code><a class="autorefs autorefs-internal" title="            path_override
 
 
   
       pydantic-field
-   (sweagent.run.batch_instances.SWEBenchInstances.path)" href="#sweagent.run.batch_instances.SWEBenchInstances.path">path</a></code>
+   (sweagent.run.batch_instances.SWEBenchInstances.path_override)" href="#sweagent.run.batch_instances.SWEBenchInstances.path_override">path_override</a></code>
                 (<code><span title="str">str</span> | <span title="pathlib.Path">Path</span> | None</code>)
             </li>
             <li>
@@ -4938,8 +4941,8 @@ Possible values are stop or start:stop or start:stop:step.
 
 
 
-<h3 id="sweagent.run.batch_instances.SWEBenchInstances.path" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">path</span>
+<h3 id="sweagent.run.batch_instances.SWEBenchInstances.path_override" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">path_override</span>
 
 
   <span class="doc doc-labels">
@@ -4947,7 +4950,7 @@ Possible values are stop or start:stop or start:stop:step.
   </span>
 
 </h3>
-<div class="doc-signature highlight"><pre><span></span><code><span class="n">path</span><span class="p">:</span> <span class="n"><span title="str">str</span></span> <span class="o">|</span> <span class="n"><span title="pathlib.Path">Path</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">path_override</span><span class="p">:</span> <span class="n"><span title="str">str</span></span> <span class="o">|</span> <span class="n"><span title="pathlib.Path">Path</span></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
@@ -5755,6 +5758,28 @@ Possible values are stop or start:stop or start:stop:step.
 
 
                 
+
+<!-- Floating Bubbles -->
+<div class="floating-bubbles">
+<div class="floating-bubbles-title">Affiliated projects</div>
+  <a href="https://swe-rex.com/" class="bubble" title="SWE-rex">
+    <img src="../../assets/swerex_logo.svg" alt="SWE-rex">
+    <span class="bubble-tooltip">SWE-ReX</span>
+  </a>
+  <a href="https://swesmith.com" class="bubble" title="SWE-smith">
+    <img src="../../assets/swesmith_logo.png" alt="SWE-smith">
+    <span class="bubble-tooltip">SWE-smith</span>
+  </a>
+  <a href="https://swebench.com" class="bubble" title="SWE-bench">
+    <img src="../../assets/swebench_logo.png" alt="SWE-bench">
+    <span class="bubble-tooltip">SWE-bench</span>
+  </a>
+  <a href="https://www.swebench.com/sb-cli/" class="bubble" title="sb-cli">
+    <img src="../../assets/sbcli_logo.svg" alt="sb-cli">
+    <span class="bubble-tooltip">sb-cli</span>
+  </a>
+</div>
+
               </article>
             </div>
           
