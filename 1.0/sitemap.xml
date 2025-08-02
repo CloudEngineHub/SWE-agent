@@ -1,215 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://swe-agent.com/latest/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/index.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/_footer/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/_footer.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/faq/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/faq.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/background/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/background/index.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/background/aci/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/background/aci.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/background/architecture/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/background/architecture.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/config/index.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/config/config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/config/config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/config/demonstrations/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/config/demonstrations.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/config/env/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/config/env.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/config/environments/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/config/environments.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/config/models/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/config/models.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/config/templates/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/config/templates.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/config/tools/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/config/tools.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/dev/contribute/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/dev/contribute.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/dev/formatting_conflicts/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/dev/formatting_conflicts.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/installation/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/installation/index.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/installation/changelog/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/installation/changelog.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/installation/codespaces/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/installation/codespaces.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/installation/keys/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/installation/keys.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/installation/migration/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/installation/migration.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/installation/source/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/installation/source.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/installation/tips/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/installation/tips.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/index.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/agent/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/agent.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/agent_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/agent_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/batch_instances/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/batch_instances.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/bundle_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/bundle_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/env/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/env.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/env_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/env_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/exceptions/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/exceptions.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/history_processor_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/history_processor_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/model_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/model_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/parsers/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/parsers.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/problem_statements/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/problem_statements.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/repo/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/repo.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/run_batch_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/run_batch_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/run_single_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/run_single_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/template_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/template_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/reference/tools_config/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/reference/tools_config.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/index.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/adding_custom_tools/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/adding_custom_tools.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/batch_mode/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/batch_mode.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/cl_tutorial/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/cl_tutorial.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/cli/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/cli.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/coding_challenges/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/coding_challenges.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/competitive_runs/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/competitive_runs.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/hello_world/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/hello_world.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/inspector/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/inspector.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/leetcode_example/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/leetcode_example.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/multimodal/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/multimodal.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/trajectories/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/trajectories.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
     <url>
-         <loc>https://swe-agent.com/latest/usage/whats_next/</loc>
-         <lastmod>2025-07-31</lastmod>
+         <loc>https://swe-agent.com/latest/usage/whats_next.html</loc>
+         <lastmod>2025-08-02</lastmod>
     </url>
 </urlset>

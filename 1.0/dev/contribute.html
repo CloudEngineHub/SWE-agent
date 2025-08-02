@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://swe-agent.com/latest/background/index.html">
+        <link rel="canonical" href="https://swe-agent.com/latest/dev/contribute.html">
       
       
-        <link rel="prev" href="../usage/index.html">
+        <link rel="prev" href="../config/environments.html">
       
       
-        <link rel="next" href="architecture.html">
+        <link rel="next" href="formatting_conflicts.html">
       
       
       <link rel="icon" href="../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>index - SWE-agent documentation</title>
+        <title>Contribution guide - SWE-agent documentation</title>
       
     
     
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#project-overview" class="md-skip">
+        <a href="#contribute-to-swe-agent" class="md-skip">
           Skip to content
         </a>
       
@@ -165,7 +165,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              index
+              Contribution guide
             
           </span>
         </div>
@@ -1024,8 +1024,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1046,15 +1044,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="../background/index.html" class="md-nav__link ">
               
   
   
@@ -1067,13 +1065,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Project overview
@@ -1089,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture.html" class="md-nav__link">
+      <a href="../background/architecture.html" class="md-nav__link">
         
   
   
@@ -1112,7 +1110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aci.html" class="md-nav__link">
+      <a href="../background/aci.html" class="md-nav__link">
         
   
   
@@ -1400,8 +1398,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1416,11 +1416,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
@@ -1436,7 +1436,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Development
@@ -1447,10 +1447,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../dev/contribute.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Contribution guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="contribute.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1461,6 +1483,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#development-repository-set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development repository set-up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for pull requests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-the-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building the documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diving-into-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diving into the code
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1473,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dev/formatting_conflicts.html" class="md-nav__link">
+      <a href="formatting_conflicts.html" class="md-nav__link">
         
   
   
@@ -2206,18 +2302,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#swe-agent" class="md-nav__link">
+  <a href="#development-repository-set-up" class="md-nav__link">
     <span class="md-ellipsis">
-      SWE-agent
+      Development repository set-up
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#swe-agent-enigma" class="md-nav__link">
+  <a href="#running-tests" class="md-nav__link">
     <span class="md-ellipsis">
-      SWE-agent EnIGMA
+      Running tests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for pull requests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-the-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building the documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diving-into-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diving into the code
     </span>
   </a>
   
@@ -2240,7 +2372,7 @@
 
 
   
-    <a href="https://github.com/SWE-agent/SWE-agent/edit/main/docs/background/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/SWE-agent/SWE-agent/edit/main/docs/dev/contribute.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2248,54 +2380,148 @@
   
 
 
-<h1 id="project-overview">Project overview</h1>
-<p>This section of the documentation talks about the architecture and research goals of <a href="#swe-agent">SWE-agent</a>.</p>
-<h2 id="swe-agent">SWE-agent <a name="swe-agent"></a></h2>
-<p>SWE-agent turns LMs (e.g. GPT-4) into software engineering agents that can fix issues in GitHub repositories.</p>
-<p>On <a href="https://github.com/SWE-bench/SWE-bench">SWE-bench</a>, SWE-agent resolves <strong>12.29%</strong> of issues, achieving the state-of-the-art performance on the full test set.</p>
-<p>We accomplish our results by designing simple LM-centric commands and feedback formats to make it easier for the LM to browse the repository, view, edit and execute code files. We call this an 🤖 <strong>Agent-Computer Interface (ACI)</strong>.
-Read more about the ACI <a href="aci.html">here</a>.</p>
-<p>SWE-agent is built and maintained by researchers from Princeton University.</p>
-<p>For a quick introduction, watch the following video:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CeMtJ4XObAM?si=W2tyY9EpEe-v12EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>A longer lecture touching on the project's motivation, research findings, as well as providing a hands-on tutorial on how to install, use, and configure SWE-agent is provided here:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d9gcXpiiDao" title="NeurIPS Hacker Cup AI: SWEAgent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>For in-depth information, read our <a href="https://arxiv.org/abs/2405.15793">paper</a>. If you found this work helpful, please consider using the following citation:</p>
-<div class="highlight"><pre><span></span><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">yang2024sweagent</span><span class="p">,</span>
-<span class="w">  </span><span class="na">title</span><span class="p">=</span><span class="s">{{SWE}-agent: Agent-Computer Interfaces Enable Automated Software Engineering}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{John Yang and Carlos E Jimenez and Alexander Wettig and Kilian Lieret and Shunyu Yao and Karthik R Narasimhan and Ofir Press}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">booktitle</span><span class="p">=</span><span class="s">{The Thirty-eighth Annual Conference on Neural Information Processing Systems}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">year</span><span class="p">=</span><span class="s">{2024}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">url</span><span class="p">=</span><span class="s">{https://arxiv.org/abs/2405.15793}</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="swe-agent-enigma">SWE-agent <span class="enigma">EnIGMA</span> <a name="enigma"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Compatibility</p>
-<p>SWE-agent <span class="enigma">EnIGMA</span> is currently only available for SWE-agent v0.7.0.</p>
+<h1 id="contribute-to-swe-agent">Contribute to SWE-agent</h1>
+<div class="admonition tip">
+<p class="admonition-title">Formatting change</p>
+<p>We've recently added automated formatting to our code base.
+If you are dealing with merge-conflicts when opening a PR or updating your fork,
+please first install <code>pre-commit</code> and run <code>pre-commit run --all-files</code> and try again.</p>
 </div>
-<p>SWE-agent <span class="enigma">EnIGMA</span> adds advanced <strong>offensive cybersecurity capabilities</strong>.</p>
-<p>On the <a href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">NYU CTF benchmark</a>, EnIGMA solves <strong>13.5%</strong> of the capture the flag (CTF) challenges, achieving the state-of-the-art performance on the full test set of 200 challenges, <strong>surpassing previous agents by more than 3x</strong> (<a href="https://enigma-agent.com#results">leaderboard</a>).</p>
-<p>We accomplish our results by extending the <a href="aci.html">🤖 ACIs</a> concept first introduced in SWE-agent, to the cybersecurity domain. We establish the novel <a href="https://swe-agent.com/0.7/background/iat/"><strong><img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:" /> Interactive Agent Tools</strong> (IATs)</a> concept, which enables our agent to use interactive tools such as a debugger, in a multitasking way such that the agent still has access to the main shell while using the debugger.</p>
-<p>We also use a new <strong>Summarizer</strong> concept integrated into the agent to deal with long context. Read more about our different summarizers <a href="https://swe-agent.com/0.7/config/summarizers/">here</a>.</p>
-<p>Specific <a href="../config/demonstrations.html">demonstrations</a> were built per each CTF category (cryptography, reverse-engineering, forensics, ...), to enhance the model ability to solve new tasks from the same category.</p>
-<p>EnIGMA is built and maintained by researchers from Tel-Aviv University, New York University and Princeton University.</p>
-<p>For a quick introduction, watch the following video:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IJxqOsNFiCc?si=xtIxyCcriM9FJexK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>The easiest way to contribute is to give us feedback.</p>
+<ul>
+<li><strong>Something isn't working?</strong> Open a <a href="https://github.com/SWE-agent/SWE-agent/issues/new?template=bug_report.yml">bug report</a>.
+  Rule of thumb: If you're running something and you get some error messages, this is the issue type for you.</li>
+<li><strong>You have a concrete question?</strong> Open a <a href="https://github.com/SWE-agent/SWE-agent/issues/new?template=question.yml">question issue</a>.</li>
+<li><strong>You are missing something?</strong> Open a <a href="https://github.com/SWE-agent/SWE-agent/issues/new?template=feature_request.yml">feature request issue</a></li>
+<li><strong>Open-ended discussion?</strong> Talk on <a href="https://discord.gg/AVEFbBn2rH">discord</a>. Note that all actionable items should be an issue though.</li>
+</ul>
+<p>Wanna do more and actually contribute code? Great! Please see the following sections for tips and guidelines!</p>
+<h2 id="development-repository-set-up">Development repository set-up</h2>
+<p>Please install the repository from source, following our <a href="../installation/source.html">usual instructions</a> but add the <code>[dev]</code> option to the <code>pip</code> command (you can just run the command again):</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;.[dev]&#39;</span>
+</code></pre></div>
+<p>Then, make sure to set up <a href="https://pre-commit.com"><code>pre-commit</code></a>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># cd to our repo root</span>
+pre-commit<span class="w"> </span>install
+</code></pre></div>
+<p><code>pre-commit</code> will check for formatting and basic syntax errors before your commits.</p>
+<div class="admonition tip">
+<p class="admonition-title">Autofixes</p>
+<p>Most problems (including formatting) will be automatically fixed.
+Therefore, if <code>pre-commit</code>/<code>git commit</code> fails on its first run, simply try running it a second time.</p>
+<p>Some more autofixes can be enabled with the <code>--unsafe-fixes</code> option from <a href="https://github.com/astral-sh/ruff"><code>ruff</code></a>:</p>
+<div class="highlight"><pre><span></span><code>pipx<span class="w"> </span>run<span class="w"> </span>ruff<span class="w"> </span>check<span class="w"> </span>--fix<span class="w"> </span>--unsafe-fixes
+</code></pre></div>
+</div>
+<h2 id="running-tests">Running tests</h2>
+<p>We provide a lot of tests that can be very helpful for rapid development.
+Run them with</p>
+<div class="highlight"><pre><span></span><code>pytest
+</code></pre></div>
+<p>Some of the tests might be slower than others. You can exclude them with</p>
+<div class="highlight"><pre><span></span><code>pytest<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;not slow&quot;</span>
+</code></pre></div>
+<p>You can run all tests in parallel with <code>pytest-xdist</code>:</p>
+<div class="highlight"><pre><span></span><code>pytest<span class="w"> </span>-n<span class="w"> </span>auto
+</code></pre></div>
+<p>If you are using VSCode, you might want to add the following two files:</p>
+<details>
+<summary><code>.vscode/launch.json</code></summary>
 
-<p>For all the details, read our <a href="https://arxiv.org/abs/2409.16165">paper</a>. If you found this work helpful, please consider using the following citation:</p>
-<div class="highlight"><pre><span></span><code><span class="nc">@misc</span><span class="p">{</span><span class="nl">abramovich2024enigmaenhancedinteractivegenerative</span><span class="p">,</span>
-<span class="w">      </span><span class="na">title</span><span class="p">=</span><span class="s">{EnIGMA: Enhanced Interactive Generative Model Agent for CTF Challenges}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">author</span><span class="p">=</span><span class="s">{Talor Abramovich and Meet Udeshi and Minghao Shao and Kilian Lieret and Haoran Xi and Kimberly Milner and Sofija Jancheska and John Yang and Carlos E. Jimenez and Farshad Khorrami and Prashanth Krishnamurthy and Brendan Dolan-Gavitt and Muhammad Shafique and Karthik Narasimhan and Ramesh Karri and Ofir Press}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">year</span><span class="p">=</span><span class="s">{2024}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">eprint</span><span class="p">=</span><span class="s">{2409.16165}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">archivePrefix</span><span class="p">=</span><span class="s">{arXiv}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">primaryClass</span><span class="p">=</span><span class="s">{cs.AI}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">url</span><span class="p">=</span><span class="s">{https://arxiv.org/abs/2409.16165}</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;configurations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Python: Debug Tests&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;debugpy&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;request&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;launch&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;program&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;${file}&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;purpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug-test&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;console&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;integratedTerminal&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;PYTEST_ADDOPTS&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;--no-cov&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;justMyCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
+</details>
+
+<details>
+<summary><code>.vscode/settings.json</code></summary>
+
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;python.testing.pytestArgs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;sweagent&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;--cov=sweagent/&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;--cov-report=xml:cov.xml&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;-n&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;auto&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;tests&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;python.testing.unittestEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;python.testing.pytestEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;git.ignoreLimitWarning&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+
+<h2 id="debugging">Debugging</h2>
+<p>We recommend to install <code>pdbpp</code> for some improved debugger features:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>pdbpp
+</code></pre></div>
+<p>Set breakpoints with <code>breakpoint()</code> and then run <code>sweagent</code> with <code>pdb</code>:</p>
+<div class="highlight"><pre><span></span><code>pdb<span class="w"> </span>-m<span class="w"> </span>sweagent<span class="w"> </span>&lt;command&gt;<span class="w"> </span>--<span class="w"> </span>&lt;more<span class="w"> </span><span class="nb">command</span><span class="w"> </span>line<span class="w"> </span>arguments&gt;<span class="w"> </span><span class="c1"># (1)!</span>
+</code></pre></div>
+<ol>
+<li>Note the <code>--</code> before the options passed to sweagent. This is to separate
+  options passed to <code>pdb</code> from those that are passed to <code>sweagent</code>.</li>
+</ol>
+<p>When working on a test that fails, you can use</p>
+<div class="highlight"><pre><span></span><code>pytest -k name_of_test -s --capture=no --log-cli-level=DEBUG
+</code></pre></div>
+<p>to see all debug output from the agent.</p>
+<h2 id="tips-for-pull-requests">Tips for pull requests</h2>
+<ul>
+<li>If you see a lot of formatting-related merge conflicts, please see <a href="formatting_conflicts.html">here</a>.</li>
+<li>Please open separate PRs for separate issues. This makes it easier to incorporate part of your changes.</li>
+<li>It might be good to open an issue and discuss first before investing time on an experimental feature.</li>
+<li>Don't know where to get started? Look for issues marked <a href="https://github.com/SWE-agent/SWE-agent/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22%F0%9F%91%8B+good+first+issue%22+">👋 good first issue</a> or <a href="https://github.com/SWE-agent/SWE-agent/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22%F0%9F%99%8F+help+wanted%22">🙏 help wanted</a></li>
+<li>When changing the behavior of the agent, we need to have some indication that it actually improves the success rate of SWE-agent.
+  However, if you make the behavior optional without complicating SWE-agent (for example by providing new <a href="../config/tools.html">commands</a>),
+  we might be less strict.</li>
+<li>Please add simple unit tests or integration tests wherever possible. Take a look in the <a href="https://github.com/SWE-agent/SWE-agent/tree/main/tests">tests directory</a>
+  for inspiration. We emphasize simple easy-to-write tests that get a lot of coverage.</li>
+</ul>
+<h2 id="building-the-documentation">Building the documentation <a name="mkdocs"></a></h2>
+<p>Simply run</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># cd repo root</span>
+mkdocs<span class="w"> </span>serve
+</code></pre></div>
+<p>and point your browser to port 8000 or click one of the links in the output.</p>
+<h2 id="diving-into-the-code">Diving into the code</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg></span> <strong>Code structure and reference</strong></p>
+<hr />
+<p>Read the reference for more information on our code.</p>
+<p><a href="../reference/index.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read more</a></p>
+</li>
+</ul>
+</div>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 12h-4v-2h4m0 6h-4v-2h4m6-6h-2.81a6 6 0 0 0-1.82-1.96L17 4.41 15.59 3l-2.17 2.17a6 6 0 0 0-2.83 0L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20z"/></svg></span> <strong>Something broken?</strong>
+    <a href="https://github.com/SWE-agent/SWE-agent/issues/new?template=bug_report.yml"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Report bug</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 19h3v3h-3zm2-17c5.35.22 7.68 5.62 4.5 9.67-.83 1-2.17 1.66-2.83 2.5C13 15 13 16 13 17h-3c0-1.67 0-3.08.67-4.08.66-1 2-1.59 2.83-2.25C15.92 8.43 15.32 5.26 12 5a3 3 0 0 0-3 3H6a6 6 0 0 1 6-6"/></svg></span> <strong>Something unclear?</strong>
+    <a href="https://github.com/SWE-agent/SWE-agent/issues/new?template=question.yml"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Ask question</a></p>
+</li>
+</ul>
+</div>
 
 
 
@@ -2359,7 +2585,7 @@ Read more about the ACI <a href="aci.html">here</a>.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../usage/index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: User guides">
+          <a href="../config/environments.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Environments">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2369,20 +2595,20 @@ Read more about the ACI <a href="aci.html">here</a>.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                User guides
+                Environments
               </div>
             </div>
           </a>
         
         
           
-          <a href="architecture.html" class="md-footer__link md-footer__link--next" aria-label="Next: Architecture">
+          <a href="formatting_conflicts.html" class="md-footer__link md-footer__link--next" aria-label="Next: Formatting conflicts">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Architecture
+                Formatting conflicts
               </div>
             </div>
             <div class="md-footer__button md-icon">

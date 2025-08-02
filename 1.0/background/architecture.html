@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://swe-agent.com/latest/background/index.html">
+        <link rel="canonical" href="https://swe-agent.com/latest/background/architecture.html">
       
       
-        <link rel="prev" href="../usage/index.html">
+        <link rel="prev" href="index.html">
       
       
-        <link rel="next" href="architecture.html">
+        <link rel="next" href="aci.html">
       
       
       <link rel="icon" href="../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>index - SWE-agent documentation</title>
+        <title>Architecture - SWE-agent documentation</title>
       
     
     
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#project-overview" class="md-skip">
+        <a href="#architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -165,7 +165,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              index
+              Architecture
             
           </span>
         </div>
@@ -1054,7 +1054,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="index.html" class="md-nav__link ">
               
   
   
@@ -1067,7 +1067,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -1086,10 +1086,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="architecture.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="architecture.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1100,6 +1109,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -2199,32 +2209,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#swe-agent" class="md-nav__link">
-    <span class="md-ellipsis">
-      SWE-agent
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#swe-agent-enigma" class="md-nav__link">
-    <span class="md-ellipsis">
-      SWE-agent EnIGMA
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2240,7 +2224,7 @@
 
 
   
-    <a href="https://github.com/SWE-agent/SWE-agent/edit/main/docs/background/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/SWE-agent/SWE-agent/edit/main/docs/background/architecture.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2248,54 +2232,17 @@
   
 
 
-<h1 id="project-overview">Project overview</h1>
-<p>This section of the documentation talks about the architecture and research goals of <a href="#swe-agent">SWE-agent</a>.</p>
-<h2 id="swe-agent">SWE-agent <a name="swe-agent"></a></h2>
-<p>SWE-agent turns LMs (e.g. GPT-4) into software engineering agents that can fix issues in GitHub repositories.</p>
-<p>On <a href="https://github.com/SWE-bench/SWE-bench">SWE-bench</a>, SWE-agent resolves <strong>12.29%</strong> of issues, achieving the state-of-the-art performance on the full test set.</p>
-<p>We accomplish our results by designing simple LM-centric commands and feedback formats to make it easier for the LM to browse the repository, view, edit and execute code files. We call this an 🤖 <strong>Agent-Computer Interface (ACI)</strong>.
-Read more about the ACI <a href="aci.html">here</a>.</p>
-<p>SWE-agent is built and maintained by researchers from Princeton University.</p>
-<p>For a quick introduction, watch the following video:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CeMtJ4XObAM?si=W2tyY9EpEe-v12EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>A longer lecture touching on the project's motivation, research findings, as well as providing a hands-on tutorial on how to install, use, and configure SWE-agent is provided here:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d9gcXpiiDao" title="NeurIPS Hacker Cup AI: SWEAgent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>For in-depth information, read our <a href="https://arxiv.org/abs/2405.15793">paper</a>. If you found this work helpful, please consider using the following citation:</p>
-<div class="highlight"><pre><span></span><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">yang2024sweagent</span><span class="p">,</span>
-<span class="w">  </span><span class="na">title</span><span class="p">=</span><span class="s">{{SWE}-agent: Agent-Computer Interfaces Enable Automated Software Engineering}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{John Yang and Carlos E Jimenez and Alexander Wettig and Kilian Lieret and Shunyu Yao and Karthik R Narasimhan and Ofir Press}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">booktitle</span><span class="p">=</span><span class="s">{The Thirty-eighth Annual Conference on Neural Information Processing Systems}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">year</span><span class="p">=</span><span class="s">{2024}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">url</span><span class="p">=</span><span class="s">{https://arxiv.org/abs/2405.15793}</span>
-<span class="p">}</span>
-</code></pre></div>
-<h2 id="swe-agent-enigma">SWE-agent <span class="enigma">EnIGMA</span> <a name="enigma"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Compatibility</p>
-<p>SWE-agent <span class="enigma">EnIGMA</span> is currently only available for SWE-agent v0.7.0.</p>
-</div>
-<p>SWE-agent <span class="enigma">EnIGMA</span> adds advanced <strong>offensive cybersecurity capabilities</strong>.</p>
-<p>On the <a href="https://github.com/NYU-LLM-CTF/LLM_CTF_Database">NYU CTF benchmark</a>, EnIGMA solves <strong>13.5%</strong> of the capture the flag (CTF) challenges, achieving the state-of-the-art performance on the full test set of 200 challenges, <strong>surpassing previous agents by more than 3x</strong> (<a href="https://enigma-agent.com#results">leaderboard</a>).</p>
-<p>We accomplish our results by extending the <a href="aci.html">🤖 ACIs</a> concept first introduced in SWE-agent, to the cybersecurity domain. We establish the novel <a href="https://swe-agent.com/0.7/background/iat/"><strong><img alt="⚙" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2699.svg" title=":gear:" /> Interactive Agent Tools</strong> (IATs)</a> concept, which enables our agent to use interactive tools such as a debugger, in a multitasking way such that the agent still has access to the main shell while using the debugger.</p>
-<p>We also use a new <strong>Summarizer</strong> concept integrated into the agent to deal with long context. Read more about our different summarizers <a href="https://swe-agent.com/0.7/config/summarizers/">here</a>.</p>
-<p>Specific <a href="../config/demonstrations.html">demonstrations</a> were built per each CTF category (cryptography, reverse-engineering, forensics, ...), to enhance the model ability to solve new tasks from the same category.</p>
-<p>EnIGMA is built and maintained by researchers from Tel-Aviv University, New York University and Princeton University.</p>
-<p>For a quick introduction, watch the following video:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IJxqOsNFiCc?si=xtIxyCcriM9FJexK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p>For all the details, read our <a href="https://arxiv.org/abs/2409.16165">paper</a>. If you found this work helpful, please consider using the following citation:</p>
-<div class="highlight"><pre><span></span><code><span class="nc">@misc</span><span class="p">{</span><span class="nl">abramovich2024enigmaenhancedinteractivegenerative</span><span class="p">,</span>
-<span class="w">      </span><span class="na">title</span><span class="p">=</span><span class="s">{EnIGMA: Enhanced Interactive Generative Model Agent for CTF Challenges}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">author</span><span class="p">=</span><span class="s">{Talor Abramovich and Meet Udeshi and Minghao Shao and Kilian Lieret and Haoran Xi and Kimberly Milner and Sofija Jancheska and John Yang and Carlos E. Jimenez and Farshad Khorrami and Prashanth Krishnamurthy and Brendan Dolan-Gavitt and Muhammad Shafique and Karthik Narasimhan and Ramesh Karri and Ofir Press}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">year</span><span class="p">=</span><span class="s">{2024}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">eprint</span><span class="p">=</span><span class="s">{2409.16165}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">archivePrefix</span><span class="p">=</span><span class="s">{arXiv}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">primaryClass</span><span class="p">=</span><span class="s">{cs.AI}</span><span class="p">,</span>
-<span class="w">      </span><span class="na">url</span><span class="p">=</span><span class="s">{https://arxiv.org/abs/2409.16165}</span><span class="p">,</span>
-<span class="p">}</span>
-</code></pre></div>
+<h1 id="architecture">Architecture</h1>
+<p>This page walks you through the general architecture of the SWE-agent package. Want to just run it? Jump ahead to the <a href="../installation/index.html">installation</a> or <a href="../usage/index.html">usage</a> sections.</p>
+<p><a class="glightbox" href="../assets/architecture.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="architecture" src="../assets/architecture.png" /></a></p>
+<p>The central entry point to SWE-agent is the <code>sweagent</code> command line executable (1). It initializes an instance of the <a href="../reference/env.html"><code>SWEEnv</code></a> class (2) that manages the environment.
+With SWE-agent 1.0, this class is now merely a thin wrapper around our <a href="https://swe-rex.com">SWE-ReX</a> package.
+Upon initialization, <code>SWEEnv</code> initializes the SWE-ReX <em>Deployment</em>. The Deployment either starts a local Docker container (4), or it starts the container on a remote system like modal or aws (3).
+Within the container, SWE-ReX starts a shell session (5) that will be used to execute the commands.
+SWE-ReX also installs the <a href="aci.html">ACI</a> elements as <a href="../config/tools.html">custom tools</a> (9) that are available to the shell session.</p>
+<p>The second class that is initialized by is the <a href="../reference/agent.html"><code>Agent</code></a> (6). It can be configured with a yaml file (see <a href="../config/config.html">config</a>). It's most important method is <code>forward()</code> which prompts the model and executes its action.</p>
+<p>To prompt the model, the history (all prompts to the model together with actions and outputs) need to be sent to the LM. In order to make the best use of the context window of the model, the history gets compressed by a <code>HistoryProcessor</code> (7). The model output (8) is then interpreted by the <code>Agent</code> class (in particular, we use a <a href="../reference/parsers.html">parser</a> to extract the action) and executed in the Shell session via <code>SWEEnv</code> (10).</p>
+<p>For this, <code>SWEEnv</code> holds the SWE-ReX deployment class that talks to a server running within the docker container (11).</p>
 
 
 
@@ -2359,7 +2306,7 @@ Read more about the ACI <a href="aci.html">here</a>.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../usage/index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: User guides">
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: index">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2369,20 +2316,20 @@ Read more about the ACI <a href="aci.html">here</a>.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                User guides
+                index
               </div>
             </div>
           </a>
         
         
           
-          <a href="architecture.html" class="md-footer__link md-footer__link--next" aria-label="Next: Architecture">
+          <a href="aci.html" class="md-footer__link md-footer__link--next" aria-label="Next: Agent tools">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Architecture
+                Agent tools
               </div>
             </div>
             <div class="md-footer__button md-icon">
